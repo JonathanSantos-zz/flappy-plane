@@ -3,8 +3,11 @@
  
 var space_beetwen = random(160) * -1;
 
-// Criar montanhas
-instance_create_layer(864, space_beetwen, "Instances", obj_montanha_cima);
-instance_create_layer(864, 637 + space_beetwen, "Instances", obj_montanha_baixo);
+var montanha_cima_y = space_beetwen;
+var montanha_baixo_y = 640 + space_beetwen;
 
-alarm[0] = room_speed * (random(2) + 1);
+// Criar montanhas
+instance_create_layer(864, montanha_cima_y, "Instances", obj_montanha_cima);
+instance_create_layer(864, montanha_baixo_y, "Instances", obj_montanha_baixo);
+
+alarm[0] = room_speed * random_range(1, 3);
