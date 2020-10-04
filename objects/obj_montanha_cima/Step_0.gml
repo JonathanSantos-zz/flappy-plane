@@ -1,3 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-hspeed = -4;
+var increaseVelocity = global.level;
+
+hspeed = -4 - increaseVelocity;
