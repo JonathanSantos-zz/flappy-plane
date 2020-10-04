@@ -10,4 +10,10 @@ var montanha_baixo_y = 640 + space_beetwen;
 instance_create_layer(864, montanha_cima_y, "Instances", obj_montanha_cima);
 instance_create_layer(864, montanha_baixo_y, "Instances", obj_montanha_baixo);
 
-alarm[0] = room_speed * random_range(1, 3);
+var velocityIncrease = (global.level * 0.1);
+
+if (velocityIncrease > 1) {
+	velocityIncrease = 1;
+}
+
+alarm[0] = room_speed * (random_range(2, 3) - velocityIncrease);

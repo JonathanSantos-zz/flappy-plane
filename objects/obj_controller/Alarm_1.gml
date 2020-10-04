@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-var pointsPerLevel = 100;
+var pointsPerLevel = 50;
 
 global.total_score++;
 global.level = global.total_score / pointsPerLevel;
